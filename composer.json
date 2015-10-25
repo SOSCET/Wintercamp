@@ -1,0 +1,13 @@
+{
+    "name": "soscet/wintercamp",
+    "authors": [
+        {
+            "name": "fateyan",
+            "email": "fateyan@soscet.org"
+        }
+    ],
+    "require": {
+        "slim/slim": "3.0.0-RC1",
+        "twig/twig": "v1.22.3"
+    }
+}
