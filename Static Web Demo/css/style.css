@@ -1,47 +1,180 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    padding: 0px;
-    margin: auto 0px;
-}
+html {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  margin: auto 0px;
+  font-family: "Microsoft JhengHei"; }
+
 body {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  margin: auto 0px;
+  font-family: "Microsoft JhengHei";
+  overflow: hidden; }
 
-}
-.Basic {
-    height: 100%;
-    margin: 0px 10rem;
-    padding: 5rem 5rem;
-}
-.menu {
-    text-align: left;
-    margin: 0px;
-    padding: 0px 0px 0px 11rem;
-    background-color: #000;
-}
-.button {
-    border-top: 2px solid transparent;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 1rem 3rem;
-    margin: 0px;
-    vertical-align: middle;
+.page {
+  overflow: hidden; }
+
+.Land {
+  position: absolute;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.5rem;
+  display: table;
+  background-color: #fff;
+  background-image: url(../img/snow-street1.jpg);
+  background-position: top;
+  background-size: cover; }
+  .Land > hgroup {
     text-align: center;
-    color: #fff;
-    background-color: #333;
-    font-family: "微軟正黑體";
-}
-.button:hover {
-    background: center top no-repeat url(../img/select.png) #444;
-}
-.active {
-    border-color: #00b5ff;
-    background: center top no-repeat url(../img/select.png);
-    text-shadow: 1px 1px 3px #0ff;
-}
-.activeBasic {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .Land > hgroup > div {
+      background-color: transparent;
+      box-sizing: border-box;
+      display: inline-block; }
+      .Land > hgroup > div > * {
+        text-shadow: 0px 0px 10px #333;
+        color: #fff; }
 
-}
-.nondisplay {
-    display: none;
-}
+.btn {
+  border-radius: 5px;
+  padding: 0.7rem 3rem;
+  font-size: 1.5rem;
+  background-color: #008dff;
+  transition: all 0.3s ease 0.1s; }
+  .btn:hover {
+    background-color: #00b5ff;
+    cursor: pointer; }
+
+.toptri {
+  position: absolute;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  height: 5vh;
+  width: 100vw;
+  text-align: auto;
+  background-color: rgba(255, 255, 255, 0.99); }
+  .toptri:after {
+    content: "";
+    position: absolute;
+    top: 5vh;
+    bottom: auto;
+    border-top: 5vh solid rgba(255, 255, 255, 0.99);
+    border-right: 100vw solid transparent;
+    border-bottom: 0px solid rgba(255, 255, 255, 0.99);
+    border-left: 0px solid transparent; }
+
+.btmtri {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0px;
+  left: auto;
+  height: 10vh;
+  width: 100vw;
+  text-align: auto;
+  background-color: rgba(255, 255, 255, 0.99); }
+  .btmtri:before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 10vh;
+    border-top: 0px solid rgba(255, 255, 255, 0.99);
+    border-right: 0px solid transparent;
+    border-bottom: 7vh solid rgba(255, 255, 255, 0.99);
+    border-left: 100vw solid transparent; }
+
+.mainform {
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: 100vh;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  height: 90vh;
+  width: 100vw;
+  text-align: auto; }
+
+.page {
+  height: 90vh; }
+
+nav > span {
+  padding: 1rem 0px 0.5rem 0px;
+  text-align: center;
+  width: 25vw;
+  min-width: 160px;
+  border-bottom: 2px #bbb solid;
+  color: #bbb;
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease 0.05s; }
+  nav > span:hover {
+    cursor: pointer;
+    border-color: #f90;
+    color: #f90; }
+
+.active {
+  cursor: pointer;
+  border-color: #f90;
+  color: #f90; }
+
+.noscroll {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width: calc(100vw + 20px);
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.noscrollContent {
+  padding: 0px;
+  margin: 3rem 0px 0px 0px;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: -20px;
+  left: auto;
+  height: calc(90vh - 3rem + 20px);
+  width: calc(100vw + 20px);
+  text-align: auto;
+  overflow-x: hidden;
+  box-sizing: border-box; }
+  .noscrollContent > div {
+    min-width: 400vw;
+    min-height: calc(90vh - 3rem); }
+
+.Content {
+  width: 100vw;
+  min-height: calc(90vh);
+  text-align: center;
+  display: inline-block; }
+
+footer {
+  position: absolute;
+  top: 190vh;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  height: 10vh;
+  width: 100vw;
+  text-align: auto;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 5rem;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */
