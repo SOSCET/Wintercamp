@@ -82,13 +82,15 @@ $green:#34A853;
 }
 
 .btn {
+    color: #fff;
     border-radius: 5px;
+    border-width: 0px;
     padding: 0.7rem 3rem;
     font-size: 1.5rem;
     background-color: #008dff;
     transition: all 0.3s ease 0.1s;
     &:hover {
-        background-color: #00b5ff;
+        background-color: #009aff;
         cursor: pointer;
     }
 }
@@ -182,7 +184,7 @@ nav > span {
 }
 
 .trimheader {
-    @include abs($p:absolute,$t:0px,$w:25vw,$h:3rem,$a:right);
+    @include abs($p:absolute,$t:0px,$h:3rem,$a:right);
     margin-top: 2rem;
     padding-left: 2rem;
     font-size: 2rem;
@@ -190,7 +192,6 @@ nav > span {
     color: #fff;
     &:after {
         @include trim($t:0px);
-        margin-right: 50vw;
     }
 }
 .trimsub {
@@ -217,6 +218,7 @@ nav > span {
     right: 0px;
     transition: all 0.3s ease 0.1s;
     background-image: url(../img/joinusgirl.png);
+    z-index: 15;
     &:hover {
         padding-top: 90px;
     }
@@ -287,6 +289,54 @@ nav > span {
     }
     .trimsub::before {
         @include border($t:2rem,$l:2rem,$ch:$green);
+    }
+}
+
+.signupbase {
+    @include abs($p:fixed,$r:0px,$b:0px,$w:100%);
+    background-color: $mainColor;
+    z-index: 11;
+    line-height: 2rem;
+    .signupheader {
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 5rem;
+        padding: 2rem auto;
+        margin-bottom: 2rem;
+        background-color: $blue;
+    }
+    .link {
+        display: inline-block;
+        background-color: $red;
+    }
+}
+.signup {
+    opacity: 0;
+    text-align: center;
+    padding: 2rem 0px;
+    transition: all 0.3s ease 0.1s;
+    form {
+        text-align: center;
+        .frmlabel {
+            display: inline-block;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+            > * {
+                font-size: 1.3rem;
+                display: block;
+            }   
+        }
+        .frminput {
+            display: inline-block;
+            text-align: left;
+            line-height: 3rem;
+            > * {
+                margin: 3px;
+                font-size: 1.3rem;
+                padding: 3px;
+            }
+        }
     }
 }
 

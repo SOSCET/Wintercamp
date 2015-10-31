@@ -42,12 +42,17 @@ $(document).ready(function() {
       $(".noscroll").bind('scroll',spy);
     });
   });
+  $(".link").click(function() {
+    $(".signupbase").toggle(800,function() {
+      $(this).children(".signup").css("opacity","1");
+    })
+  })
     var scrollVal = $(this).scrollTop();
-    console.log(scrollVal);
   $(".noscroll").scroll(first);
   $(".noscroll").scroll(base);
   $(".noscroll").scroll(spy);
-  $(".btn").click(function() {
+  $(".signupbase").hide();
+  $(".btn.first").click(function() {
     $(".noscroll").animate({scrollTop:$(window).innerHeight()},1000,"swing")
   });
 })

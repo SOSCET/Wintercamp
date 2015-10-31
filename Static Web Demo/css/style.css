@@ -46,13 +46,15 @@ body {
         color: #fff; }
 
 .btn {
+  color: #fff;
   border-radius: 5px;
+  border-width: 0px;
   padding: 0.7rem 3rem;
   font-size: 1.5rem;
   background-color: #008dff;
   transition: all 0.3s ease 0.1s; }
   .btn:hover {
-    background-color: #00b5ff;
+    background-color: #009aff;
     cursor: pointer; }
 
 .toptri {
@@ -172,7 +174,7 @@ nav > span {
   bottom: auto;
   left: auto;
   height: 3rem;
-  width: 25vw;
+  width: auto;
   text-align: right;
   margin-top: 2rem;
   padding-left: 2rem;
@@ -185,8 +187,7 @@ nav > span {
     top: 0px;
     right: auto;
     bottom: auto;
-    left: auto;
-    margin-right: 50vw; }
+    left: auto; }
 
 .trimsub {
   position: absolute;
@@ -221,7 +222,8 @@ nav > span {
   bottom: 0px;
   right: 0px;
   transition: all 0.3s ease 0.1s;
-  background-image: url(../img/joinusgirl.png); }
+  background-image: url(../img/joinusgirl.png);
+  z-index: 15; }
   .joinus:hover {
     padding-top: 90px; }
 
@@ -291,6 +293,53 @@ nav > span {
   border-right: 0px solid transparent;
   border-bottom: 0px solid #34A853;
   border-left: 2rem solid transparent; }
+
+.signupbase {
+  position: fixed;
+  top: auto;
+  right: 0px;
+  bottom: 0px;
+  left: auto;
+  height: auto;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  z-index: 11;
+  line-height: 2rem; }
+  .signupbase .signupheader {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 5rem;
+    padding: 2rem auto;
+    margin-bottom: 2rem;
+    background-color: #4285F4; }
+  .signupbase .link {
+    display: inline-block;
+    background-color: #EA4335; }
+
+.signup {
+  opacity: 0;
+  text-align: center;
+  padding: 2rem 0px;
+  transition: all 0.3s ease 0.1s; }
+  .signup form {
+    text-align: center; }
+    .signup form .frmlabel {
+      display: inline-block;
+      line-height: 3rem;
+      margin-bottom: 2rem; }
+      .signup form .frmlabel > * {
+        font-size: 1.3rem;
+        display: block; }
+    .signup form .frminput {
+      display: inline-block;
+      text-align: left;
+      line-height: 3rem; }
+      .signup form .frminput > * {
+        margin: 3px;
+        font-size: 1.3rem;
+        padding: 3px; }
 
 footer {
   position: auto;
