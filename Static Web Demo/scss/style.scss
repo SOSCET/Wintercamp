@@ -314,14 +314,13 @@ nav > span {
 .signup {
     opacity: 0;
     text-align: center;
-    padding: 2rem 0px;
+    padding-top: 1rem;
     transition: all 0.3s ease 0.1s;
     form {
         text-align: center;
         .frmlabel {
             display: inline-block;
             line-height: 3rem;
-            margin-bottom: 2rem;
             > * {
                 font-size: 1.3rem;
                 display: block;
@@ -331,6 +330,7 @@ nav > span {
             display: inline-block;
             text-align: left;
             line-height: 3rem;
+            margin-bottom: 1rem;
             > * {
                 margin: 3px;
                 font-size: 1.3rem;

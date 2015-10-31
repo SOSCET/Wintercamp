@@ -321,21 +321,21 @@ nav > span {
 .signup {
   opacity: 0;
   text-align: center;
-  padding: 2rem 0px;
+  padding-top: 1rem;
   transition: all 0.3s ease 0.1s; }
   .signup form {
     text-align: center; }
     .signup form .frmlabel {
       display: inline-block;
-      line-height: 3rem;
-      margin-bottom: 2rem; }
+      line-height: 3rem; }
       .signup form .frmlabel > * {
         font-size: 1.3rem;
         display: block; }
     .signup form .frminput {
       display: inline-block;
       text-align: left;
-      line-height: 3rem; }
+      line-height: 3rem;
+      margin-bottom: 1rem; }
       .signup form .frminput > * {
         margin: 3px;
         font-size: 1.3rem;
