@@ -187,12 +187,15 @@ nav > span {
 .trimheader {
     @include abs($p:absolute,$t:0px,$h:3rem,$a:right);
     margin-top: 2rem;
+    margin-right: 80vw;
+    min-width: 300px;
+    padding-right: 1rem;
     padding-left: 2rem;
     font-size: 2rem;
     line-height: 3rem;
     color: #fff;
     &:after {
-        @include trim($t:0px);
+        @include trim($t:0px,$r:-3rem);
     }
 }
 .trimsub {

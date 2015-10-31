@@ -178,6 +178,9 @@ nav > span {
   width: auto;
   text-align: right;
   margin-top: 2rem;
+  margin-right: 80vw;
+  min-width: 300px;
+  padding-right: 1rem;
   padding-left: 2rem;
   font-size: 2rem;
   line-height: 3rem;
@@ -186,7 +189,7 @@ nav > span {
     content: "";
     position: absolute;
     top: 0px;
-    right: auto;
+    right: -3rem;
     bottom: auto;
     left: auto; }
 
