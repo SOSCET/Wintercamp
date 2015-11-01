@@ -89,6 +89,7 @@ $green:#34A853;
     font-family: "Microsoft JhengHei";
     color: #fff;
     background-color: #008dff;
+    margin: 0px 0.5rem;
     transition: all 0.3s ease 0.1s;
     &:hover {
         background-color: #009aff;
@@ -164,7 +165,6 @@ nav > span {
 
 .content {
     width: 100vw;
-    min-height: calc(90vh);
     text-align: center;
 }
 
@@ -232,7 +232,6 @@ nav > span {
     bottom: 0px;
     cursor: pointer;
     min-width: 60px;
-    margin-bottom: 30px;
     transition: all 0.3s ease 0.1s;
 }
 
@@ -299,7 +298,7 @@ nav > span {
 .signupbase {
     @include abs($p:fixed,$r:0px,$b:0px,$w:100%);
     background-color: $mainColor;
-    z-index: 11;
+    z-index: 100;
     line-height: 2rem;
     .signupheader {
         color: #fff;
@@ -307,7 +306,7 @@ nav > span {
         font-size: 2rem;
         line-height: 5rem;
         padding: 2rem auto;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         background-color: $blue;
     }
     .link {
@@ -318,27 +317,37 @@ nav > span {
 .signup {
     opacity: 0;
     text-align: center;
-    padding-top: 1rem;
-    transition: all 0.3s ease 0.1s;
+    padding-top: 0px;
+    padding-bottom: 2rem;
+    transition: all 0.2s ease;
     form {
         text-align: center;
-        .frmlabel {
-            display: inline-block;
-            line-height: 3rem;
-            > * {
-                font-size: 1.3rem;
-                display: block;
-            }   
-        }
-        .frminput {
-            display: inline-block;
-            text-align: left;
-            line-height: 3rem;
+        > table {
+            margin: auto;
             margin-bottom: 1rem;
-            > * {
-                margin: 3px;
+            td:{
+                padding: 0px;
+            }
+            td:nth-child(1) {
                 font-size: 1.3rem;
-                padding: 3px;
+                text-align: right;
+            }
+            td:nth-child(2) {
+                text-align: left;
+                > * {
+                    font-size: 1.3rem;
+                    margin: 0.3rem;
+                    margin-bottom: 0px;
+                }
+            }
+            td.ss{
+                line-height: 0.75rem !important;
+                >small {
+                    font-size: 0.75rem !important;
+                    text-align: left;
+                    padding-left: 5px;
+                    color: red;
+                }
             }
         }
     }
@@ -352,3 +361,6 @@ footer {
     margin-top: 5rem;
     box-sizing: border-box;
 }
+
+
+@import "mobile.css"
