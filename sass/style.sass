@@ -1,0 +1,21 @@
+header
+  .top
+    height: 5vh
+    position: absolute
+    width: 100%;
+    background-color: #fff;
+    &:after
+      content: ""
+      position: absolute
+      top: 5vh
+      border-top: 5vh solid #fff
+      border-right: 100vh solid transparent
+  .bottom
+    @extend .top
+    bottom: 0
+    &:before
+      @extend .top:after
+      bottom: 10vh
+      border-bottom: 5vh solid #fff
+      border-left: 100vh solid transparent
+      

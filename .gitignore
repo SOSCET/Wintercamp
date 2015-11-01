@@ -2,3 +2,5 @@
 /vendor/
 *.swp
 .env
+public/assets
+node_modules/
