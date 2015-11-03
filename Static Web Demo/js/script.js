@@ -43,7 +43,7 @@ $(document).ready(function() {
     });
   });
   $(".link").click(function() {
-    $(".signupbase").toggle(800,function() {
+    $(".signupbase").children(".signup").css("opacity","0").parent().delay(200).toggle(500,function() {
       $(this).children(".signup").css("opacity","1");
     })
   })

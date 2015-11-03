@@ -1,3 +1,4 @@
+@import url(mobile.css);
 html {
   height: 100vh;
   width: 100%;
@@ -53,6 +54,7 @@ body {
   font-family: "Microsoft JhengHei";
   color: #fff;
   background-color: #008dff;
+  margin: 0px 0.5rem;
   transition: all 0.3s ease 0.1s; }
   .btn:hover {
     background-color: #009aff;
@@ -153,7 +155,6 @@ nav > span {
 
 .content {
   width: 100vw;
-  min-height: calc(90vh);
   text-align: center; }
 
 .contentmargin {
@@ -235,7 +236,6 @@ nav > span {
   bottom: 0px;
   cursor: pointer;
   min-width: 60px;
-  margin-bottom: 30px;
   transition: all 0.3s ease 0.1s; }
 
 .content[data-pageNum="1"] .trimheader {
@@ -308,7 +308,7 @@ nav > span {
   width: 100%;
   text-align: left;
   background-color: white;
-  z-index: 11;
+  z-index: 100;
   line-height: 2rem; }
   .signupbase .signupheader {
     color: #fff;
@@ -316,7 +316,7 @@ nav > span {
     font-size: 2rem;
     line-height: 5rem;
     padding: 2rem auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: #4285F4; }
   .signupbase .link {
     display: inline-block;
@@ -325,25 +325,31 @@ nav > span {
 .signup {
   opacity: 0;
   text-align: center;
-  padding-top: 1rem;
-  transition: all 0.3s ease 0.1s; }
+  padding-top: 0px;
+  padding-bottom: 2rem;
+  transition: all 0.2s ease; }
   .signup form {
     text-align: center; }
-    .signup form .frmlabel {
-      display: inline-block;
-      line-height: 3rem; }
-      .signup form .frmlabel > * {
+    .signup form > table {
+      margin: auto;
+      margin-bottom: 1rem;
+      td-padding: 0px; }
+      .signup form > table td:nth-child(1) {
         font-size: 1.3rem;
-        display: block; }
-    .signup form .frminput {
-      display: inline-block;
-      text-align: left;
-      line-height: 3rem;
-      margin-bottom: 1rem; }
-      .signup form .frminput > * {
-        margin: 3px;
-        font-size: 1.3rem;
-        padding: 3px; }
+        text-align: right; }
+      .signup form > table td:nth-child(2) {
+        text-align: left; }
+        .signup form > table td:nth-child(2) > * {
+          font-size: 1.3rem;
+          margin: 0.3rem;
+          margin-bottom: 0px; }
+      .signup form > table td.ss {
+        line-height: 0.75rem !important; }
+        .signup form > table td.ss > small {
+          font-size: 0.75rem !important;
+          text-align: left;
+          padding-left: 5px;
+          color: red; }
 
 footer {
   position: auto;
