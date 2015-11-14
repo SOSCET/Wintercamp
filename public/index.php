@@ -7,19 +7,24 @@ $dotenv = new Dotenv\Dotenv(BASEPATH);
 $dotenv->load();
 
 //Connect database
-$dsn = "{$_SERVER['DB_DRIVER']}: host={$_SERVER['DB_HOST']}; port={$_SERVER['DB_PORT']}; dbname={$_SERVER['DB_DATABASE']}";
-$db = new PDO($dsn, $_SERVER['DB_USERNAME'], $_SERVER['DB_PASSWORD']);
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+try {
+    $dsn = "{$_SERVER['DB_DRIVER']}: host={$_SERVER['DB_HOST']}; port={$_SERVER['DB_PORT']}; dbname={$_SERVER['DB_DATABASE']}";
+    $db = new PDO($dsn, $_SERVER['DB_USERNAME'], $_SERVER['DB_PASSWORD']);
+    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    var_dump($e->getMessage());
+    die();
+}
 
 //init Slim & set template directory
 $app = new \Slim\Slim();
-$app->view->setTemplatesDirectory(BASEPATH . '/app/views/');
+$app->view->setTemplatesDirectory(BASEPATH . '/views/');
 
 /**
  * Homepage
  */
 $app->get('/', function() use ($app) {
-    $app->render('demo.php');
+    $app->render('index.html');
 });
 
 /**

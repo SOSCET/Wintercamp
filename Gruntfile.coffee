@@ -4,8 +4,14 @@ module.exports = (grunt) ->
       options:
         sourceMap: true
       dist: 
-        files:
-          'public/assets/style/style.css': 'sass/main.sass'
+        files: [
+            expand: true,
+            cwd: 'sass',
+            src: ['*.sass'],
+            dest: 'public/assets/css',
+            ext: '.css'
+        ]
+          
     copy:
       main:
         files: [ {
@@ -13,7 +19,13 @@ module.exports = (grunt) ->
           src: ['assets/**']
           dest: 'public/'
         } ]
+    watch:
+      main:
+        files: ['sass/**', 'assets/**']
+        tasks: ['copy', 'sass']
+
   grunt.loadNpmTasks 'grunt-contrib-copy'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-sass'
 
   grunt.initConfig conf
