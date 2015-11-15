@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "grunt": "*",
-    "grunt-sass": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-copy": "*"
-  }
-}
