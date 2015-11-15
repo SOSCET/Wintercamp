@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>開源！資訊萌芽營！ - SOSCET</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -10,48 +12,70 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapse-1" data-target="#menu" aria-expanded="false" aria-controls="menus" data-toggle="collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#">開源！資訊萌芽營</a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="nav-item" href="#">開源！資訊萌芽營！</a></li>
-                <li><a class="nav-item" href="#">關於我們</a></li>
-                <li><a class="nav-item" href="#">聯絡我們</a></li>
-                <li><a class="nav-item" href="#">工作人員&amp;贊助</a></li>
-            </ul>
+            <div id="menu" class="navbar-collapse collapse" aria-expanded="false">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a class="nav-item" href="#idea">活動理念</a></li>
+                    <li><a class="nav-item" href="#event">關於活動</a></li>
+                    <li><a class="nav-item" href="#about">關於我們</a></li>
+                    <li><a class="nav-item" href="#staff">工作人員</a></li>
+                    <li><a class="nav-item" href="#sponser">贊助</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <header id="landing">
+    <header id="landing" class="col-md-12">
         <hgroup>
             <h1>開源！資訊萌芽營！</h1>
             <h4>動手和大家一起玩出世界</h4>
         </hgroup>
     </header>
-    <section>
-        <div class="container">
-            <h2>開源！資訊萌芽營！</h2>
-        </div>
-    </section>
-    <section>
-        <div class="container">
+    <div class="container">
+        <section id="idea" class="col-md-12">
+            <h2>活動理念</h2>
+            <p>在充斥著電腦的這個世代，人們的生活已和電腦密不可分，看著無人機、物聯網和智慧型手機的誕生，就能想像到「資訊爆炸的未來」，甚至在某些國家，「程式設計」已成為國中小的「必修課」。
+這次的活動目的是發掘東部對資訊領域有興趣的學生族群，引領他們鳥瞰有趣的資訊領域，透過三天兩夜的營隊活動，動手一同學習、創造，更落實東部的資訊發展。
+            </p>
+        </section>
+        <section id="event" class="col-md-12">
+            <h2>關於活動</h2>
+            <ul>
+                <li>活動對象：國中（含）以上學生</li>
+                <li>活動日期：1/28 ~ 1/31</li>
+                <li>活動地點：花蓮 東華大學</li>
+                <li>報名辦法：線上報名後匯款</li>
+                <li>交通方式：
+                    <ul>
+                        <li>1/28 12:45 從花蓮火車站發車至東華大學</li>
+                        <li>1/31 15:00
+                        從東華大學發車至花蓮火車站</li>
+                    </ul>
+                </li>
+                <li>活動住宿：東華大學學生宿舍</li>
+                <li>匯款方式：</li>
+            </ul>
+            <div id="agenda">
+            </div>
+        </section>
+        <section id="about" class="col-md-12">
             <h2>關於我們</h2>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>連絡我們</h2>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>工作人員&amp;贊助</h2>
-        </div>
-    </section>
+            <p>SOSCET(Students' Open Source Community of Eastern Taiwan)
+是由花蓮在地學生發起的資訊開源學生社群，目的是推動台灣東部的資訊及開源、凝聚東部熱愛資訊的夥伴、促進學生之間的合作以及資訊知識的分享與傳承。</p>
+        </section>
+        <section id="staff" class="col-md-12">
+            <h2>工作人員</h2>
+        </section>
+        <section id="sponser" class="col-md-12">
+            <h2>贊助</h2>
+        </section>
+    </div>
     <footer>
         <h5>Students' Open Source Community of Eastern Taiwan</h5>
         <i class="facebook">SOSCET's Facebook</i>
