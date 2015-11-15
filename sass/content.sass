@@ -10,23 +10,29 @@
 #idea
   margin-bottom: 20px;
 .block
-    padding-bottom: 20px;
-    h4
-      color: #369;
+  padding-bottom: 20px;
+  h4
+    color: #369;
+    text-align: center;
+  p
+    text-align: center;
+#agenda
+  overflow-x: scroll;
+  .table
+    color: #fff;
+    margin: 0 auto;
+    min-width: 540px;
+    tr td, tr th
+      border: 2px solid #eee;
+      background-color: #444;
       text-align: center;
-    p
-      text-align: center;
-.table
-  color: #fff;
-  margin: 0 auto;
-  min-width: 540px;
-  overflow: hidden;
-  //border-collapse: separate;
-  //border-spacing: 2px;
-  //border-color: grey;
-  tr td, tr th
-    border: 2px solid #eee;
-    background-color: #000;
+      vertical-align: middle;
+    tr .misc 
+      background-color: #51B3A4;
+    tr .playing
+      background-color: #60A9F3;
+    tr .lesson
+      background-color: #E07B90;
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
   border-top: none;
