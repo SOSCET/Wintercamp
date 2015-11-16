@@ -67,23 +67,43 @@ h1, h2, h3, h4, h5, p, a {
   .block p {
     text-align: center; }
 
-#agenda {
-  overflow-x: scroll; }
-  #agenda .table {
-    color: #fff;
-    margin: 0 auto;
-    min-width: 540px; }
-    #agenda .table tr td, #agenda .table tr th {
-      border: 2px solid #eee;
-      background-color: #444;
-      text-align: center;
-      vertical-align: middle; }
-    #agenda .table tr .misc {
-      background-color: #51B3A4; }
-    #agenda .table tr .playing {
-      background-color: #60A9F3; }
-    #agenda .table tr .lesson {
-      background-color: #E07B90; }
+#agenda .agenda-item {
+  position: relative;
+  color: #eee;
+  height: 60px;
+  margin-top: 20px; }
+  #agenda .agenda-item .agenda-left {
+    padding-left: 20px;
+    background-color: #51ACF7;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    width: 100%;
+    font-size: 150%; }
+  #agenda .agenda-item .agenda-right {
+    position: absolute;
+    background-color: #7267DA;
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    right: 0; }
+    #agenda .agenda-item .agenda-right .agenda-time {
+      line-height: 20px;
+      position: absolute;
+      right: 20px; }
+      #agenda .agenda-item .agenda-right .agenda-time span {
+        display: block;
+        text-align: center; }
+    #agenda .agenda-item .agenda-right:before {
+      content: "";
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid #7267DA;
+      position: absolute;
+      left: -30px; }
+
+#agenda .agenda-item {
+  box-shadow: 0px 0px 5px rgba(200, 200, 200, 0.4); }
 
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
   border-top: none; }
@@ -110,6 +130,11 @@ h1, h2, h3, h4, h5, p, a {
   .enter:visited {
     color: #fff;
     text-decoration: none; }
+
+#staff, #partner {
+  text-align: center; }
+  #staff h4, #partner h4 {
+    color: #369; }
 
 footer {
   background-color: #333;
