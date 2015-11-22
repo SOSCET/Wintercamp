@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     sass:
       options:
         sourceMap: true
-      dist: 
+      dist:
         files: [
             expand: true,
             cwd: 'sass',
@@ -11,7 +11,6 @@ module.exports = (grunt) ->
             dest: 'public/assets/css',
             ext: '.css'
         ]
-          
     copy:
       main:
         files: [ {
