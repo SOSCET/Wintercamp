@@ -7,48 +7,37 @@
       color: #5cb8fc;
     p
       line-height: 2em;
+    h4
+      color: #369;
 
 #idea
   margin-bottom: 20px;
-.block
-  padding-bottom: 20px;
-  h4
-    color: #369;
-    text-align: center;
-  p
-    text-align: center;
 #agenda
   .agenda-item
     position: relative;
     color: #eee;
-    $barHeight: 60px;
+    $barHeight: 3rem;
     $barLineHeight: $barHeight;
     $leftColor: #51ACF7;
     $rightColor: #7267DA;
     height: $barHeight;
     margin-top: 20px;
     .agenda-left
-      padding-left: 20px;
+      padding-left: 1rem;
       background-color: $leftColor;
-      height: $barHeight;
-      line-height: $barLineHeight;
+      height: 3rem;
+      line-height: 3rem;
       position: absolute;
       width: 100%;
-      font-size: 150%;
+      font-size: 1.5rem;
     .agenda-right
       position: absolute;
       background-color: $rightColor;
-      width: 20%;
-      height: $barHeight;
-      line-height: $barLineHeight;
+      width: 10rem;
+      height: 3rem;
+      line-height: 3rem;
+      text-align: right;
       right: 0;
-      .agenda-time
-        line-height: $barHeight / 3;
-        position: absolute;
-        right: $barHeight / 3;
-        span
-          display: block;
-          text-align: center;
       &:before
         content: "";
         border-top: $barHeight / 2 solid transparent;
@@ -60,7 +49,9 @@
   .agenda-item
     box-shadow: 0px 0px 5px rgba(200, 200, 200, 0.4);
 
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+.table tr,
+.table td,
+.table th
   border-top: none;
 .enter
   display: block;
@@ -78,17 +69,8 @@
     background-color: rgba(255,180,21, 0.8);
     color: #fff;
     text-decoration: none;
-  &:active
-    color: #fff;
-    text-decoration: none;
+  &:active,
   &:visited
     color: #fff;
     text-decoration: none;
-#staff, #partner
-  text-align: center;
-  h4
-    color: #369;
-#contact
-  div
-    p
-      text-align: center;
+
