@@ -31,5 +31,9 @@ footer {
     padding: 12px 12px; }
   footer .fa-envelope {
     padding: 12px 12px; }
+  footer a {
+    margin-left: 6px; }
+  footer a:first-child {
+    margin-left: 0; }
 
 /*# sourceMappingURL=footer.css.map */
