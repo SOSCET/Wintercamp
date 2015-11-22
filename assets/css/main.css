@@ -50,9 +50,9 @@ h1, h2, h3, h4, h5, p, a {
   .wrapper section p {
     line-height: 2em; }
 
-#idea, #event, #about, #staff, #partner, #comeon {
+#idea, #event, #about, #staff, #partner, #comeon, #contact {
   padding-top: 52px; }
-  #idea h2, #event h2, #about h2, #staff h2, #partner h2, #comeon h2 {
+  #idea h2, #event h2, #about h2, #staff h2, #partner h2, #comeon h2, #contact h2 {
     text-align: center;
     color: #5cb8fc; }
 
@@ -135,6 +135,9 @@ h1, h2, h3, h4, h5, p, a {
   text-align: center; }
   #staff h4, #partner h4 {
     color: #369; }
+
+#contact div p {
+  text-align: center; }
 
 footer {
   background-color: #333;
