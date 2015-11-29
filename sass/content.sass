@@ -20,14 +20,14 @@
     $barLineHeight: $barHeight;
     $leftColor: #51ACF7;
     $rightColor: #7267DA;
-    height: $barHeight;
     margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(200, 200, 200, 0.4);
     .agenda-left
       padding-left: 1rem;
       background-color: $leftColor;
       height: 3rem;
       line-height: 3rem;
-      position: absolute;
+      position: relative;
       width: 100%;
       font-size: 1.5rem;
     .agenda-right
@@ -38,6 +38,7 @@
       line-height: 3rem;
       text-align: right;
       right: 0;
+      top: 0;
       &:before
         content: "";
         border-top: $barHeight / 2 solid transparent;
@@ -47,8 +48,12 @@
         left: -($barHeight / 2);
       p
         padding-right: 6px;
-  .agenda-item
-    box-shadow: 0px 0px 5px rgba(200, 200, 200, 0.4);
+    .agenda-content
+      color: #555;
+      padding: $barHeight;
+      display: none;
+    &:hover 
+      box-shadow: 0 0 2px #444;
 
 .table tr,
 .table td,
