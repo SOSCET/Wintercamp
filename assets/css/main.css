@@ -63,14 +63,14 @@ h1, h2, h3, h4, h5, p, a {
 #agenda .agenda-item {
   position: relative;
   color: #eee;
-  height: 3rem;
-  margin-top: 20px; }
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px rgba(200, 200, 200, 0.4); }
   #agenda .agenda-item .agenda-left {
     padding-left: 1rem;
     background-color: #51ACF7;
     height: 3rem;
     line-height: 3rem;
-    position: absolute;
+    position: relative;
     width: 100%;
     font-size: 1.5rem; }
   #agenda .agenda-item .agenda-right {
@@ -80,7 +80,8 @@ h1, h2, h3, h4, h5, p, a {
     height: 3rem;
     line-height: 3rem;
     text-align: right;
-    right: 0; }
+    right: 0;
+    top: 0; }
     #agenda .agenda-item .agenda-right:before {
       content: "";
       border-top: 1.5rem solid transparent;
@@ -90,9 +91,12 @@ h1, h2, h3, h4, h5, p, a {
       left: -1.5rem; }
     #agenda .agenda-item .agenda-right p {
       padding-right: 6px; }
-
-#agenda .agenda-item {
-  box-shadow: 0px 0px 5px rgba(200, 200, 200, 0.4); }
+  #agenda .agenda-item .agenda-content {
+    color: #555;
+    padding: 3rem;
+    display: none; }
+  #agenda .agenda-item:hover {
+    box-shadow: 0 0 2px #444; }
 
 .table tr,
 .table td,
